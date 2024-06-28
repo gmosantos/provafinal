@@ -36,7 +36,7 @@ function Home() {
             <div className='d-flex flex-column justify-content-center align-items-center bg-light vh-100 mt-5'>
                 <div className='w-100 rounded bg-white border shadow p-4'>
                     <div className='d-flex justify-content-end'>
-                        <Link to="/post" className='btn btn'>Add+</Link>
+                        <Link to="/post" className='btn btn-success'>Adicionar</Link>
                     </div>
 
                     <table className='table table-striped mt-4'>
@@ -57,9 +57,9 @@ function Home() {
                                     <td>{d.quantidade}</td>
                                     <td>{d.valor}</td>
                                     <td>
-                                        <Link to={`/put/${d.id}`} className='btn btn-sm btn-dark'>Editar</Link>
+                                        <Link to={`/put/${d.id}`} className='btn btn-sm btn-primary'>Editar</Link>
                                         <button className='btn btn-sm btn-danger ms-2' onClick={e => handleDelete(d.id)}>Deletar</button>
-                                        <Link to={`/read/${d.id}`} className='btn btn-sm btn-dark ms-2'>Ver</Link>
+                                        <Link to={`/read/${d.id}`} className='btn btn-sm btn-info ms-2'>Ver</Link>
                                     </td>
                                 </tr>
                             ))}
